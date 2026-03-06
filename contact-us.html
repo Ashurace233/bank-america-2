@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us — Bank of America</title>
+    <meta name="description" content="Get in touch. Send a message or find phone, email, and locations." />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="fdic-bar"><span>Member FDIC. Equal Housing Lender.</span></div>
+    <div class="utility-bar">
+      <div class="container-7xl utility-inner">
+        <div class="utility-left">
+          <a class="brand" href="./index.html" aria-label="Home"><img src="./assets/Bank_of_America_logo.svg" alt="Bank of America" style="height: 32px; width: auto" /></a>
+          <a class="utility-link" href="./personal.html">Personal</a>
+          <a class="utility-link" href="./small-business.html">Small Business</a>
+          <a class="utility-link" href="./wealth.html">Wealth Management</a>
+          <a class="utility-link" href="./products.html">Businesses & Institutions</a>
+          <a class="utility-link" href="./about.html">About Us</a>
+        </div>
+        <div class="utility-right">
+          <a class="utility-link" href="./locations.html">Locations</a>
+          <a class="utility-link" href="./contact-us.html">Contact Us</a>
+          <a class="utility-link" href="./help.html">Help</a>
+          <a class="utility-link" href="./help.html">En español</a>
+          <input class="search-input" type="text" placeholder="How can we help you?" aria-label="Search" />
+          <a class="btn btn--primary" href="./signin.html">Sign in</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="section-gray">
+        <div class="content-wrap">
+          <h1 class="h2-style" style="font-size: 2rem;">Contact Us</h1>
+          <p class="text-xl muted mb-0">We're here to help.</p>
+          <img src="./assets/Contact Us.png" alt="Customer support team ready to help" style="width: 100%; max-height: 320px; object-fit: cover; border-radius: 8px;" />
+        </div>
+      </section>
+
+      <section class="section-white">
+        <div class="content-wrap content-wrap-narrow">
+          <div id="contact-success" class="success-msg" hidden>
+            Message sent successfully. We'll get back to you soon.
+          </div>
+
+          <div class="grid-2">
+            <div>
+              <h2 class="h2-style mb-6">Send us a message</h2>
+              <form class="form" data-demo-contact id="contact-form">
+                <label class="block mb-4">
+                  <span class="font-semibold mb-1 block">Full Name *</span>
+                  <input type="text" name="name" required class="input-field" placeholder="Full name" />
+                </label>
+                <label class="block mb-4">
+                  <span class="font-semibold mb-1 block">Email Address *</span>
+                  <input type="email" name="email" required class="input-field" placeholder="Email" />
+                </label>
+                <label class="block mb-4">
+                  <span class="font-semibold mb-1 block">Phone Number</span>
+                  <input type="tel" name="phone" class="input-field" placeholder="Phone" />
+                </label>
+                <label class="block mb-4">
+                  <span class="font-semibold mb-1 block">Subject *</span>
+                  <select name="subject" required class="input-field">
+                    <option value="">Select a topic</option>
+                    <option value="account">Account Questions</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="loan">Loan Inquiry</option>
+                    <option value="technical">Technical Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </label>
+                <label class="block mb-4">
+                  <span class="font-semibold mb-1 block">Message *</span>
+                  <textarea name="message" required rows="5" class="input-field" placeholder="Your message"></textarea>
+                </label>
+                <button type="submit" class="btn btn--primary" style="width: 100%;">Send Message</button>
+              </form>
+            </div>
+
+            <div>
+              <h2 class="h2-style mb-6">Other ways to reach us</h2>
+              <div class="flex flex-col gap-6">
+                <div class="flex gap-4">
+                  <div class="icon-circle-lg flex-shrink-0"></div>
+                  <div>
+                    <h3 class="font-semibold mb-1">Phone</h3>
+                    <p class="muted mb-0">1-800-432-1000</p>
+                    <p class="text-sm muted mb-0">Mon–Fri 8am–9pm ET</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="icon-circle-lg flex-shrink-0"></div>
+                  <div>
+                    <h3 class="font-semibold mb-1">Email</h3>
+                    <p class="muted mb-0">customer.service@bankofamerica.com</p>
+                    <p class="text-sm muted mb-0">We'll respond within 24 hours.</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="icon-circle-lg flex-shrink-0"></div>
+                  <div>
+                    <h3 class="font-semibold mb-1">Visit a Location</h3>
+                    <p class="muted mb-0">Find a financial center near you.</p>
+                    <a href="./locations.html" class="utility-link text-sm">Find locations</a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="muted">© 2026 Bank of America Corporation. All rights reserved.</div>
+        <div class="footer__links">
+          <a href="./about.html">About</a>
+          <a href="./help.html">Help</a>
+          <a href="./privacy.html">Privacy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/main.js" defer></script>
+    <script>
+      document.getElementById('contact-form')?.addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('contact-success').hidden = false;
+        this.reset();
+      });
+    </script>
+  </body>
+</html>

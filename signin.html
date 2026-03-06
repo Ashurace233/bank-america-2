@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in — Bank of America</title>
+    <meta name="description" content="Bank of America - Sign in to your account." />
+    <meta property="og:title" content="Sign in — Bank of America" />
+    <meta property="og:description" content="Bank of America - Sign in to your account." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/BAC.svg" />
+    <link rel="icon" href="./assets/BAC.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="fdic-bar">
+      <span>Member FDIC. Equal Housing Lender.</span>
+    </div>
+
+    <div class="utility-bar">
+      <div class="container-7xl utility-inner">
+        <div class="utility-left">
+          <a class="brand" href="./index.html" aria-label="Home">
+            <img src="./assets/Bank_of_America_logo.svg" alt="Bank of America" style="height: 32px; width: auto" />
+          </a>
+          <a class="utility-link" href="./personal.html">Personal</a>
+          <a class="utility-link" href="./small-business.html">Small Business</a>
+          <a class="utility-link" href="./wealth.html">Wealth Management</a>
+          <a class="utility-link" href="./products.html">Businesses & Institutions</a>
+          <a class="utility-link" href="./about.html">About Us</a>
+        </div>
+        <div class="utility-right">
+          <a class="utility-link" href="./locations.html">Locations</a>
+          <a class="utility-link" href="./contact-us.html">Contact Us</a>
+          <a class="utility-link" href="./help.html">Help</a>
+          <a class="utility-link" href="./help.html">En español</a>
+          <input class="search-input" type="text" placeholder="How can we help you?" />
+        </div>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <div class="container-7xl main-header-inner">
+        <div class="signin-wrap lg">
+          <div class="signin-card">
+            <section class="signin-box" aria-label="Sign in box">
+              <h2>Enter your Online ID</h2>
+
+            <form
+              class="form"
+              data-demo-signin
+              data-demo-redirect="./dashboard.html"
+              data-demo-delay-ms="2000"
+            >
+              <label>
+                Online ID
+                <input autocomplete="off" name="username" placeholder="Online ID" />
+              </label>
+
+              <div class="signin-row">
+                <div class="left">
+                  <input id="saveId" type="checkbox" style="width: 16px; height: 16px" />
+                  <label for="saveId" style="font-weight: 700; margin: 0">Save this Online ID</label>
+                </div>
+                <button class="link" type="button" id="toggleHelp">Help/options</button>
+              </div>
+
+              <label>
+                Passcode
+                <input autocomplete="off" name="password" type="password" placeholder="Passcode" />
+              </label>
+
+              <div class="signin-actions">
+                <button class="btn btn--primary" type="submit">Sign In</button>
+              </div>
+            </form>
+
+            <a href="./help.html" class="text-sm text-white underline mt-2 inline-block">Enroll</a>
+
+            <div id="helpBox" class="notice" style="margin-top: 12px" hidden>
+              <strong>Save your Online ID</strong>
+              <div class="muted" style="margin-top: 6px; color: rgba(255,255,255,0.9)">
+                Don’t save on a public device.
+              </div>
+            </div>
+
+            <p
+              id="demo-signin-message"
+              class="notice danger"
+              style="margin-top: 12px"
+              hidden
+            ></p>
+            <p id="demo-signin-loading" class="notice" style="margin-top: 12px" hidden></p>
+          </section>
+          </div>
+
+          <div class="signin-hero">
+            <img
+              src="./assets/yy.png"
+              onerror="this.onerror=null;this.src='./assets/placeholder.svg';"
+              alt="Sign in"
+              class="hero-img"
+            />
+          </div>
+        </div>
+
+        <nav class="tabs" aria-label="Primary tabs">
+          <a class="tablink active" href="./banking.html">Banking</a>
+          <a class="tablink" href="./credit-cards-public.html">Credit Cards</a>
+          <a class="tablink" href="./loans.html">Loans</a>
+          <a class="tablink" href="./investments-public.html">Investments</a>
+          <a class="tablink" href="./learning.html">Learning</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page">
+      <div class="container-7xl">
+        <section style="margin-top: 18px">
+          <div class="grid">
+            <!-- Banking -->
+            <div class="tile">
+              <img
+                src="./assets/13.png"
+                alt="Banking"
+                style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 10px"
+              />
+              <h3>Banking</h3>
+              <ul class="muted" style="list-style: none; padding: 0; margin: 6px 0 0; font-size: 14px">
+                <li><a href="./banking.html" class="utility-link">Checking accounts</a></li>
+                <li><a href="./banking.html" class="utility-link">Savings & CDs</a></li>
+                <li><a href="./banking.html" class="utility-link">Online & Mobile banking</a></li>
+              </ul>
+            </div>
+
+            <!-- Credit Cards -->
+            <div class="tile">
+              <img
+                src="./assets/12.png"
+                alt="Credit cards"
+                style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 10px"
+              />
+              <h3>Credit Cards</h3>
+              <ul class="muted" style="list-style: none; padding: 0; margin: 6px 0 0; font-size: 14px">
+                <li><a href="./credit-cards-public.html" class="utility-link">View all cards</a></li>
+                <li><a href="./credit-cards-public.html" class="utility-link">Cash back</a></li>
+                <li><a href="./credit-cards-public.html" class="utility-link">Travel & rewards</a></li>
+              </ul>
+            </div>
+
+            <!-- Loans -->
+            <div class="tile">
+              <img
+                src="./assets/b3.jpeg"
+                alt="Loans"
+                style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 10px"
+              />
+              <h3>Loans</h3>
+              <ul class="muted" style="list-style: none; padding: 0; margin: 6px 0 0; font-size: 14px">
+                <li><a href="./loans.html" class="utility-link">Home loans</a></li>
+                <li><a href="./loans.html" class="utility-link">Auto loans</a></li>
+                <li><a href="./loans.html" class="utility-link">Personal loans</a></li>
+              </ul>
+            </div>
+
+            <!-- Investments -->
+            <div class="tile">
+              <img
+                src="./assets/b4.jpeg"
+                alt="Investments"
+                style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 10px"
+              />
+              <h3>Investments</h3>
+              <ul class="muted" style="list-style: none; padding: 0; margin: 6px 0 0; font-size: 14px">
+                <li><a href="./investments-public.html" class="utility-link">Self-directed investing</a></li>
+                <li><a href="./investments-public.html" class="utility-link">Guided investing</a></li>
+                <li><a href="./wealth.html" class="utility-link">Wealth management</a></li>
+              </ul>
+            </div>
+
+            <!-- Learning -->
+            <div class="tile">
+              <img
+                src="./assets/senior-mature-retired-man-bills-paperwork-finances_iStock-1977287414.jpg"
+                alt="Learning"
+                style="width: 100%; height: 140px; object-fit: cover; border-radius: 12px; margin-bottom: 10px"
+              />
+              <h3>Learning</h3>
+              <ul class="muted" style="list-style: none; padding: 0; margin: 6px 0 0; font-size: 14px">
+                <li><a href="./learning.html" class="utility-link">Better Money Habits®</a></li>
+                <li><a href="./help.html" class="utility-link">Help center</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="muted">© <span id="y"></span> Bank of America</div>
+        <div class="footer__links">
+          <a href="./privacy.html">Privacy</a>
+          <a href="./about.html">About</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+      const btn = document.getElementById("toggleHelp");
+      const box = document.getElementById("helpBox");
+      if (btn && box) btn.addEventListener("click", () => (box.hidden = !box.hidden));
+    </script>
+    <script src="./assets/main.js" defer></script>
+  </body>
+</html>

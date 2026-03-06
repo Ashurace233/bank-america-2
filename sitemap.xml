@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>./index.html</loc></url>
+  <url><loc>./personal.html</loc></url>
+  <url><loc>./products.html</loc></url>
+  <url><loc>./small-business.html</loc></url>
+  <url><loc>./wealth.html</loc></url>
+  <url><loc>./locations.html</loc></url>
+  <url><loc>./help.html</loc></url>
+  <url><loc>./about.html</loc></url>
+  <url><loc>./privacy.html</loc></url>
+  <url><loc>./signin.html</loc></url>
+  <url><loc>./dashboard.html</loc></url>
+  <url><loc>./transactions.html</loc></url>
+  <url><loc>./profile.html</loc></url>
+</urlset>

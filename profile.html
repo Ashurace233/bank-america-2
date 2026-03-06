@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile — Example Bank</title>
+    <meta name="description" content="Profile page (presentation template)." />
+    <meta property="og:title" content="Profile — Example Bank" />
+    <meta property="og:description" content="Profile and settings for presentation." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./assets/og-image.svg" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="fdic-bar">
+      <span>Member FDIC. Equal Housing Lender.</span>
+    </div>
+
+    <header class="header">
+      <div class="container-7xl" style="padding: 0 0 10px">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 14px 0">
+          <a class="brand" href="./dashboard.html" aria-label="Home">
+            <img src="./assets/Bank_of_America_logo.svg" alt="Bank of America" style="height: 36px; width: auto" />
+          </a>
+
+          <div class="top-icons" aria-label="Top links">
+            <a class="iconlink" href="./transactions.html" style="position: relative; padding-right: 4px">
+              <span style="font-size: 20px">✉</span>
+              <span>Inbox</span>
+              <span class="badge" aria-hidden="true">3</span>
+            </a>
+            <a class="iconlink" href="./products.html">
+              <span style="font-size: 20px">🛒</span>
+              <span>Products</span>
+            </a>
+            <a class="iconlink" href="./profile.html">
+              <span style="font-weight: 800">Profile</span>
+            </a>
+            <a class="iconlink" href="./signin.html" id="demoSignOut">
+              <span style="font-size: 18px">⎋</span>
+              <span>Log Out</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="subtabs" aria-label="Tabs">
+          <a class="subtab active" href="./dashboard.html">Accounts</a>
+        </div>
+
+        <div class="help-search">
+          <div class="wrap">
+            <span class="lens" aria-hidden="true">🔎</span>
+            <input type="text" placeholder="How can we help?" />
+            <span class="go" aria-hidden="true">🔎</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="page" data-reveal-after-ms="2000">
+      <div class="container-7xl">
+        <div id="pageLoading" class="panel" hidden>
+          <div class="loading">
+            <div class="spinner" aria-hidden="true"></div>
+            <div>
+              <div style="font-weight: 900; color: var(--brand-blue)">Loading profile…</div>
+              <div class="muted">Just a moment.</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="pageContent">
+          <div style="max-width: 672px">
+            <h1 style="margin: 0 0 6px; font-size: 24px; font-weight: 900; color: var(--gray-900)">Profile & Settings</h1>
+            <p class="muted" style="margin: 0 0 18px">Manage your personal information and preferences</p>
+
+            <div class="card">
+              <div class="card-pad-lg" style="display: flex; align-items: center; gap: 16px; border-bottom: 1px solid var(--gray-200)">
+                <div class="avatar">J</div>
+                <div>
+                  <div style="font-size: 20px; font-weight: 900; color: var(--gray-900)">Jack Leo White</div>
+                  <div style="font-size: 14px; color: var(--gray-500)">Online ID: JackLeoWhite</div>
+                </div>
+              </div>
+
+              <div style="display: grid">
+                <a class="listlink" href="./profile.html">
+                  <div style="display: flex; align-items: center; gap: 14px">
+                    <span style="color: var(--gray-500)">👤</span>
+                    <div style="flex: 1">
+                      <div style="font-weight: 800; color: var(--gray-900)">Personal Information</div>
+                      <div style="font-size: 14px; color: var(--gray-500)">Name, address, phone, email</div>
+                    </div>
+                    <span class="chev">›</span>
+                  </div>
+                </a>
+                <a class="listlink" href="./profile.html" style="border-top: 1px solid var(--gray-200)">
+                  <div style="display: flex; align-items: center; gap: 14px">
+                    <span style="color: var(--gray-500)">🛡</span>
+                    <div style="flex: 1">
+                      <div style="font-weight: 800; color: var(--gray-900)">Security & Privacy</div>
+                      <div style="font-size: 14px; color: var(--gray-500)">Password, questions, saved devices</div>
+                    </div>
+                    <span class="chev">›</span>
+                  </div>
+                </a>
+                <a class="listlink" href="./profile.html" style="border-top: 1px solid var(--gray-200)">
+                  <div style="display: flex; align-items: center; gap: 14px">
+                    <span style="color: var(--gray-500)">🔔</span>
+                    <div style="flex: 1">
+                      <div style="font-weight: 800; color: var(--gray-900)">Notifications</div>
+                      <div style="font-size: 14px; color: var(--gray-500)">Alerts, statements, preferences</div>
+                    </div>
+                    <span class="chev">›</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="muted">© 2026 Bank of America Corporation. All rights reserved.</div>
+        <div class="footer__links">
+          <a href="./about.html">About</a>
+          <a href="./help.html">Help</a>
+          <a href="./privacy.html">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/main.js" defer></script>
+  </body>
+</html>
+

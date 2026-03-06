@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find a Location — Bank of America</title>
+    <meta name="description" content="Find ATMs and financial centers near you." />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="fdic-bar"><span>Member FDIC. Equal Housing Lender.</span></div>
+    <div class="utility-bar">
+      <div class="container-7xl utility-inner">
+        <div class="utility-left">
+          <a class="brand" href="./index.html" aria-label="Home"><img src="./assets/Bank_of_America_logo.svg" alt="Bank of America" style="height: 32px; width: auto" /></a>
+          <a class="utility-link" href="./personal.html">Personal</a>
+          <a class="utility-link" href="./small-business.html">Small Business</a>
+          <a class="utility-link" href="./wealth.html">Wealth Management</a>
+          <a class="utility-link" href="./products.html">Businesses & Institutions</a>
+          <a class="utility-link" href="./about.html">About Us</a>
+        </div>
+        <div class="utility-right">
+          <a class="utility-link" href="./locations.html" aria-current="page">Locations</a>
+          <a class="utility-link" href="./contact-us.html">Contact Us</a>
+          <a class="utility-link" href="./help.html">Help</a>
+          <a class="utility-link" href="./help.html">En español</a>
+          <input class="search-input" type="text" placeholder="How can we help you?" aria-label="Search" />
+          <a class="btn btn--primary" href="./signin.html">Sign in</a>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="section-gray">
+        <div class="content-wrap">
+          <h1 class="h2-style" style="font-size: 2rem;">Find a Location</h1>
+          <p class="text-xl muted mb-8">Find ATMs and financial centers. Use our locator to search by city, state, or ZIP code.</p>
+          <form class="flex gap-2 flex-wrap mb-8" onsubmit="return false;" style="max-width: 32rem;">
+            <div class="pos-rel flex-1" style="min-width: 200px;">
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input type="text" placeholder="Enter city, state or ZIP code" class="input-field" style="padding-left: 40px;" />
+            </div>
+            <button type="button" class="btn btn--primary">Search</button>
+          </form>
+          <p class="text-sm muted mb-4">More search options available after search.</p>
+          <div class="img-placeholder" style="height: 300px;">  <img src="./assets/Locations.png" alt="Banking Solutions" style="height: 100%; width: 100%; object-fit: cover;" />
+            Locations map image — for your build, use a map or illustration showing nearby ATMs and financial centers.
+          </div>
+        </div>
+      </section>
+
+      <section class="section-white">
+        <div class="content-wrap">
+          <h2 class="h2-style mb-6">Financial Centers & ATMs</h2>
+          <p class="muted mb-6">We have thousands of financial centers and ATMs nationwide. Use the search above to find locations near you. Many locations offer extended hours and weekend availability.</p>
+          <div class="grid-2">
+            <div class="content-card">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="icon-circle"></div>
+                <h3 class="font-semibold mb-0">Financial Centers</h3>
+              </div>
+              <p class="muted text-sm mb-2">Full-service banking, notary, and appointments.</p>
+              <a href="./server-error.html" class="utility-link text-sm">Find locations</a>
+            </div>
+            <div class="content-card">
+              <div class="flex items-center gap-3 mb-3">
+                <div class="icon-circle"></div>
+                <h3 class="font-semibold mb-0">ATM Locator</h3>
+              </div>
+              <p class="muted text-sm mb-2">Deposit, withdraw, and more at ATMs nationwide.</p>
+              <a href="./server-error.html" class="utility-link text-sm">Find ATMs</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-gray">
+        <div class="content-wrap text-center">
+          <h2 class="h2-style mb-4">Schedule an Appointment</h2>
+          <p class="muted mb-6">Book a time to meet with a specialist at a financial center.</p>
+          <a href="./server-error.html" class="cta-red">Schedule Appointment</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="muted">© 2026 Bank of America Corporation. All rights reserved.</div>
+        <div class="footer__links">
+          <a href="./about.html">About</a>
+          <a href="./help.html">Help</a>
+          <a href="./privacy.html">Privacy</a>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/main.js" defer></script>
+  </body>
+</html>
